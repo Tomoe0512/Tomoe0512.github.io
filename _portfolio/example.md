@@ -1,13 +1,12 @@
 ---
 caption: #what displays in the portfolio grid:
   title: 3D Art
-  subtitle: subtitle
-  thumbnail: assets/img/portfolio/bee.jpg
-  
-#what displays when the item is clicked:
+  subtitle: my 3D works
+  thumbnail: assets/img/portfolio/bee.png
+
 title: Bee placeholder
 subtitle: Area with all my work
-image: assets/img/portfolio/bee.jpg #make carrusel with all of them
+image: assets/img/portfolio/bee.png 
 alt: image alt text
 
 ---
