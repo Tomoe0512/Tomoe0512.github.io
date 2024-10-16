@@ -11,12 +11,10 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
-    #- title: "CV"
-     # url: https://github.com/raviriley/agency-jekyll-theme/
-    - title: "Services"
-      section: services
     - title: "Portfolio"
       section: portfolio
+    - title: "Services"
+      section: services
     - title: "About"
       section: about
 
