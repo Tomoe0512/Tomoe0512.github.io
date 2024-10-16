@@ -1,6 +1,6 @@
 <!-- Clients -->
 {% if site.locale and site.locale != "" and site.locale != nil %}
-  <section class="page-section" id="{{ site.data.sitetext[site.locale].clients.section | default: "clients" }}">
+  <section class="page-section" id="{{ site.data.sitetext[site.locale].clients.section | default: "clients" }}" style="padding-top:50px">
     <div class="container">
       <div class="row" {% if site.data.sitetext[site.locale].clients.horizontal-scrolling == "yes" %} id="scrolling-clients" {% endif %}>
 	    {% for client in site.data.sitetext[site.locale].clients.list %}
@@ -14,17 +14,17 @@
     </div>
   </section>
 {% else %}
-<section class="py-5 page-section" id="{{ site.data.sitetext.clients.section | default: "clients" }}">
-  <div class="container">
-    <div class="row" {% if site.data.sitetext.clients.horizontal-scrolling == "yes" %} id="scrolling-clients" {% endif %}>
-    {% for client in site.data.sitetext.clients.list %}
-      <div class="col-md-12">
-        <a href="{{ client.url }}">
-          <img class="img-fluid d-block mx-auto" src="{{ client.logo }}" alt="{{ client.title }}" style="max-height: {{ site.data.sitetext.clients.max-height | default: "100px" }}">
-        </a>
+  <section class="page-section" id="{{ site.data.sitetext.clients.section | default: "clients" }}" style="padding-top:50px">
+    <div class="container">
+      <div class="row" {% if site.data.sitetext.clients.horizontal-scrolling == "yes" %} id="scrolling-clients" {% endif %}>
+      {% for client in site.data.sitetext.clients.list %}
+        <div class="col-md-12">
+          <a href="{{ client.url }}">
+            <img class="img-fluid d-block mx-auto" src="{{ client.logo }}" alt="{{ client.title }}" style="max-height: {{ site.data.sitetext.clients.max-height | default: "100px" }}">
+          </a>
+        </div>
+      {% endfor %}
       </div>
-    {% endfor %}
     </div>
-  </div>
-</section>
+  </section>
 {% endif %}
