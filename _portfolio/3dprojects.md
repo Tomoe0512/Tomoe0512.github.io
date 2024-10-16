@@ -11,5 +11,6 @@ alt: Slide of images
 
 ---
 I converted some 2D fan art found on the internet to 3d Models
-Made in 3dsMax
+Made in 3dsMax and then i flew a plane to a plane and then another person walked in a straight line and then
+i went to the park and then test
 
