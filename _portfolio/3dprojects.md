@@ -4,15 +4,12 @@ caption: #what displays in the portfolio grid:
   subtitle: my 3D works
   thumbnail: assets/img/portfolio/bee.png
 
-title: Bee placeholder
-subtitle: Area with all my work
+title: My 3D Models
+subtitle: Area with all my 3D work
 image: assets/img/portfolio/bee.png 
-alt: image alt text
+alt: Slide of images
 
 ---
-Description here :D
-
-{:.list-inline} 
-- Date: less go
-- Client: less client
+I converted some 2D fan art found on the internet to 3d Models
+Made in 3dsMax
 
