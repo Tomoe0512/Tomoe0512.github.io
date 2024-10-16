@@ -29,14 +29,15 @@ ul.social-buttons {
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
-      color: white;
+      color: #dedede;
       border-radius: 100%;
       outline: none;
-      background-color: $gray-900;
+      background-color: $primary;
       &:active,
       &:focus,
       &:hover {
-        background-color: $primary;
+        background-color: #dedede;
+        color: $primary;
       }
     }
   }
