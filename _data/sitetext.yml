@@ -11,10 +11,10 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to our Studio!
-    text: It's Nice To Meet You
-    button: Tell Me More
-    buttonlink: "#services"
+   # title:
+    text: Come see my works!
+    button: Start Looking!
+    buttonlink: "#portfolio"
 
   services:
     title: "Services"
@@ -33,7 +33,7 @@ en: &DEFAULT_EN
 
   portfolio:
     title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
+    text: "The different art works i have worked on"
     section: portfolio
     closebutton: "Close Project"
 
