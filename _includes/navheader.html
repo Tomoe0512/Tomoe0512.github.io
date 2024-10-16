@@ -14,6 +14,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
+          <li>
+            <a class="nav-link js-scroll-trigger" id="downloadButton"> CV </a>
+          </li>
         {% if site.locale and site.locale != "" and site.locale != nil %}
         {% for link in site.data.navigation[site.locale].nav %}
           <li class="nav-item">
@@ -43,6 +46,18 @@
       </div>
     </div>
   </nav>
+
+<script>
+  const downloadButton = document.getElementById('downloadButton');
+
+  downloadButton.addEventListener('click', () => {
+    const pdfUrl = 'cv.pdf'; // Replace with the actual URL of your PDF file
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'VeneciaPazCV.pdf'; // Replace with the desired filename for the downloaded PDF
+    link.click();
+  });
+</script>
   <!-- End Navigation -->
   
   <!-- Header -->
