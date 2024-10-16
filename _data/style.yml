@@ -2,7 +2,7 @@
 highlight: "#352121"
 white: "#dedede"
 black: "#342020"
-background:"#827777"
+#background:"#827777"
 
 #Image Customization
 header-image: "../img/header.png"
