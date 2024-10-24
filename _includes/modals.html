@@ -1,5 +1,4 @@
 <!-- Portfolio Modals -->
-{% for project in site.portfolio %}
 <div
   class="portfolio-modal modal fade"
   id="p{{ forloop.index }}"
@@ -34,14 +33,14 @@
                     <div class="carousel-item active">
                     <img style="border-radius: 5%" width="100%" height="100%" src="assets/img/carousel/3DArt/bee.png" alt="Bee">
                     <div class="carousel-caption">
-                      <h3>Pikachu</h3>
-                      <p>te va a pikar</p>
+                      <h3>Bee</h3>
+                      <p>bonita abejita</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img style="border-radius: 5%" width="100%" height=" 100%" src="assets/img/carousel/3DArt/pika.png" alt="pika">
                     <div class="carousel-caption">
-                      <h3>Bee</h3>
+                      <h3>Pikachu</h3>
                       <p>My Model wow</p>
                     </div>
                   </div>
@@ -81,5 +80,71 @@
     </div>
   </div>
 </div>
-{% endfor %}
+<!-- 2D Art here -->
+<div
+  class="portfolio-modal modal fade"
+  id="p{{ forloop.index }}"
+  tabindex="-1"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">{{ project.title }}</h2>
+              <p class="item-intro text-muted">{{ project.subtitle }}</p>
+              <div id="modalCarouse" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#modalCarouse" data-slide-to="0" class="active"></li>
+                  <li data-target="#modalCarouse" data-slide-to="1"></li>
+                  <li data-target="#modalCarouse" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img style="border-radius: 5%" width="100%" height="100%" src="assets/img/portfolio/sophy.png" alt="Conejo">
+                    <div class="carousel-caption">
+                      <h3>Sophy</h3>
+                      <p>Drawing bunny</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#modalCarouse" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#modalCarouse" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <p style="text-align: center;">{{ project.content }}</p>
+              <button
+                class="btn btn-primary"
+                data-dismiss="modal"
+                type="button"
+              >
+                <i class="fas fa-times"></i>
+                {{ site.data.sitetext[site.locale].portfolio.closebutton |
+                default: "Close Project" }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- End Portfolio Modals -->
