@@ -12,7 +12,7 @@
 en: &DEFAULT_EN
   header:
    # title:
-    text: Come see my works!
+    text: Come see my work!
     button: Start Looking!
     buttonlink: "#portfolio"
 
