@@ -2,7 +2,7 @@
 caption: #what displays in the portfolio grid:
   title: 2D Art
   subtitle: my 2D works
-  thumbnail: assets/img/portfolio/bee.png
+  thumbnail: assets/img/portfolio/sophy.png
 
 title: My 2D Models
 subtitle: Area with all my 2D work
