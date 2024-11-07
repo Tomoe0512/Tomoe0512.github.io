@@ -23,8 +23,8 @@ en: &DEFAULT_EN
     closebutton: "Close Project"
 
   services:
-    title: "Services"
-    text: "AQUI DESGLOSAR LO QUE HACES"
+    title: "Softwares"
+    text: "I have mid to complete mastery in all of the following softwares! Download my CV in order to see more :)"
     section: services
     #list:
       # - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
