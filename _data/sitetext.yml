@@ -24,7 +24,7 @@ en: &DEFAULT_EN
 
   services:
     title: "Softwares"
-    text: "I have mid to complete mastery in all of the following softwares! Download my CV in order to see more :)"
+    text: "I have middle to advance level experience with the following software! Download my resume in order to see more :)"
     section: services
     #list:
       # - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
@@ -34,7 +34,7 @@ en: &DEFAULT_EN
   about:
     title: "About me"
     text: "What you have to know :)"
-    body: "Im a 3D principally focused in asset creation and hand painted textures. I like to learn and challenge myself with new and harder objectives to reach better results in my projects."
+    body: "I'm a 3D artist principally focused on asset creation and hand painted textures. I like to learn and challenge myself with new and harder objectives to reach better results in my projects."
     section: about
 
   clients:
