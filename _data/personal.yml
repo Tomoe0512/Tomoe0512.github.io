@@ -11,15 +11,15 @@
 # -----------------
 en: &DEFAULT_EN
   model:
-    - src: "assets/img/carousel/3DArt/pika.png"
+    - src: "assets/img/carousel/Personal/pika.png"
       alt: "pika"
       title: Pikachu
       description: 2D artist @Kotone11152
-    - src: "assets/img/carousel/3DArt/duck.png" 
+    - src: "assets/img/carousel/Personal/duck.png" 
       alt: "duck"
       title: Duck
       description: 2d artist @thoursandskies
-    - src: "assets/img/carousel/3DArt/sophy3d.png"
+    - src: "assets/img/carousel/Personal/sophy3d.png"
       alt: "Bunny"
       title: Sophy
       description: My OC - Venecia Paz
