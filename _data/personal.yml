@@ -5,7 +5,7 @@
 # locale: "en-US"  [YOUR PREFERRED LOCALE]
 #
 # How to use:
-# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
+# {{ site.data.personal[site.locale].personal.<var_name> | default: 'text' }}
 
 # English (default)
 # -----------------
@@ -13,8 +13,8 @@ en: &DEFAULT_EN
   personal:
     - src: "assets/img/carousel/3DArt/pika.png"
       alt: "pika"
-      title: "Pikachu"
-      description: "2D artist @Kotone11152"
+      title: Pikachu
+      description: 2D artist @Kotone11152
 
 en-US:
   <<: *DEFAULT_EN
