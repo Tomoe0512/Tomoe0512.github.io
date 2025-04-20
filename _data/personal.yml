@@ -10,12 +10,21 @@
 # English (default)
 # -----------------
 en: &DEFAULT_EN
-  personal:
+  model1:
     src: "assets/img/carousel/3DArt/pika.png"
     alt: "pika"
     title: Pikachu
     description: 2D artist @Kotone11152
-  test:
+  model2:
+    src: "assets/img/carousel/3DArt/duck.png" 
+    alt: "duck"
+    title: Duck
+    description: 2d artist @thoursandskies
+  model3:
+    src: "assets/img/carousel/3DArt/sophy3d.png"
+    alt: "Bunny"
+    title: Sophy
+    description: My OC - Venecia Paz
 
 en-US:
   <<: *DEFAULT_EN
