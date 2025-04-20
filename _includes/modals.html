@@ -40,12 +40,12 @@
                     </div>
                   </div>
                   <!--//////////////////////////////////////////////////////////////-->
-                  {% for model in site.data.personal[site.locale] %}
+                  {% for item in site.data.personal[site.locale].model %}
                   <div class="carousel-item">
-                    <img style="border-radius: 5%" width="100%" height=" 100%" src="{{ site.data.personal[site.locale].model1.src }}" alt="{{ site.data.personal[site.locale].model1.alt }}">
+                    <img style="border-radius: 5%" width="100%" height=" 100%" src="{{ item.src }}" alt="{{ item.alt }}">
                     <div>
-                      <h3> {{ model.model1 }}</h3>
-                      <h6> {{ description }}</h6>
+                      <h3> {{ item.model1 }}</h3>
+                      <h6> {{ item.description }}</h6>
                     </div>
                   </div>
                   {% endfor %}
