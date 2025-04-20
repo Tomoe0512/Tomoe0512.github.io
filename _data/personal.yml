@@ -11,10 +11,10 @@
 # -----------------
 en: &DEFAULT_EN
   personal:
-    - src: "assets/img/carousel/3DArt/pika.png"
-      alt: "pika"
-      title: Pikachu
-      description: 2D artist @Kotone11152
+    src: "assets/img/carousel/3DArt/pika.png"
+    alt: "pika"
+    title: Pikachu
+    description: 2D artist @Kotone11152
 
 en-US:
   <<: *DEFAULT_EN
