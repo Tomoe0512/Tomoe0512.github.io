@@ -18,7 +18,7 @@
             <a class="nav-link js-scroll-trigger" id="downloadButton"> RESUME </a>
           </li>
         {% if site.locale and site.locale != "" and site.locale != nil %}
-        {% for link in site.data.navigation[site.locale].nav %}
+        {% for link in site.data.navigation.nav %}
           <li class="nav-item">
             {%- if link.url -%}
               <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
@@ -64,20 +64,33 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-	  {%- if site.data.sitetext[site.locale].header.title -%}
-        <div class="intro-lead-in">{{ site.data.sitetext[site.locale].header.title | markdownify }}</div>
-	  {%- endif -%}
-	  {%- if site.data.sitetext[site.locale].header.text -%}
+	      {%- if site.data.sitetext.header.title -%}
+        <div class="intro-lead-in">{{ site.data.sitetext.header.title | markdownify }}</div>
+	      {%- endif -%}
+	      {%- if site.data.sitetext.header.text -%}
         <div class="intro-heading text-uppercase">
             <div>
               <img class="img-fluid" src="assets/img/Logo.png" alt="" width="600" height="450">
             </div>
-          {{ site.data.sitetext[site.locale].header.text | markdownify }}
+          {{ site.data.sitetext.header.text | markdownify }}
         </div>
-	  {%- endif -%}
-	  {%- if site.data.sitetext[site.locale].header.button -%}
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext[site.locale].header.buttonlink }}">{{ site.data.sitetext[site.locale].header.button }}</a>
-	  {%- endif -%}
+	      {%- endif -%}
+	      {%- if site.data.sitetext.header.button -%}
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext.header.buttonlink }}">{{ site.data.sitetext.header.button }}</a>
+	      {%- endif -%}
+        <div style="margin-top: 30px ;display: flex; flex-direction: row; align-items: center; justify-content: center;">
+          <ul class="list-inline social-buttons">
+            {% for link in site.data.sitetext.footer.social %}
+            <li class="list-inline-item">
+              {% if link.url %}
+              <a href="{{ link.url }}">
+                {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+              </a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
     </div>
   </header>

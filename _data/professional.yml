@@ -5,30 +5,20 @@
 # locale: "en-US"  [YOUR PREFERRED LOCALE]
 #
 # How to use:
-# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
+# {{ site.data.navigation.nav.<var_name> | default: 'text' }}
 
 # English (default)
 # -----------------
-en: &DEFAULT_EN
-  model:
-    - src: "assets/img/carousel/Personal/pika.png"
-      alt: "pika"
-      title: Pikachu
-      description: 2D artist @Kotone11152
-    - src: "assets/img/carousel/Personal/duck.png" 
-      alt: "duck"
-      title: Duck
-      description: 2d artist @thoursandskies
-    - src: "assets/img/carousel/Personal/sophy3d.png"
-      alt: "Bunny"
-      title: Sophy
-      description: My OC - Venecia Paz
-
-en-US:
-  <<: *DEFAULT_EN
-en-CA:
-  <<: *DEFAULT_EN
-en-GB:
-  <<: *DEFAULT_EN
-en-AU:
-  <<: *DEFAULT_EN
+model:
+  - src: "assets/img/carousel/Personal/pika.png"
+    alt: "pika"
+    title: Pikachu
+    description: 2D artist @Kotone11152
+  - src: "assets/img/carousel/Personal/duck.png" 
+    alt: "duck"
+    title: Duck
+    description: 2d artist @thoursandskies
+  - src: "assets/img/carousel/Personal/sophy3d.png"
+    alt: "Bunny"
+    title: Sophy
+    description: My OC - Venecia Paz
